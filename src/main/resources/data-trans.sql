@@ -1,0 +1,12 @@
+DROP TABLE IF EXISTS product ;
+
+CREATE TABLE product  (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  sku VARCHAR(8) NOT NULL,
+  name VARCHAR(50) NOT NULL,
+  brand VARCHAR(50) NOT NULL,
+  size CHAR(2) DEFAULT NULL,
+  price DECIMAL(8,2) NOT NULL,
+  principal_image_url VARCHAR(250) NOT NULL,
+  others_image_url VARCHAR(250) DEFAULT NULL
+);
